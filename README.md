@@ -1,15 +1,15 @@
-# OnioonJS
+# Onioon.JS
 
-OnioonJS is a lightweight and reactive JavaScript templating library designed to provide simple and efficient data binding and dynamic rendering for your web applications.
+Onioon.JS is a lightweight and reactive JavaScript library for web development.
 
 Go to Onioon [documentation](https://onioonjs.netlify.app) for detailed guides and usage examples.
 
 ## Getting Started
 
-Include the OnioonJS library and your script in your HTML:
+Include the Onioon.JS library and your script in your HTML:
 
 ```html
-<script type="module" src="./script.js"></script>
+<script type="module" src="main.js"></script>
 ```
 
 Use template expressions in your HTML:
@@ -22,7 +22,7 @@ Use template expressions in your HTML:
 Set data dynamically in your script:
 
 ```js
-import { Onioon } from "https://cdn.jsdelivr.net/gh/kalokaradia/OnioonJS/onioonjs/onioon.js";
+import { Onioon } from "https://cdn.jsdelivr.net/gh/kalokaradia/Onioon.JS/onioonjs/onioon.js";
 
 Onioon.data.title = "OnioonJS Test";
 Onioon.data.name = "World";

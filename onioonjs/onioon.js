@@ -6,7 +6,6 @@ const Onioon = {
 	data: {},
 	elements: [],
 	root: document.body,
-
 	init() {
 		this.elements = scanTemplates(this.root);
 		renderAll(this.elements, this.data);
@@ -15,7 +14,6 @@ const Onioon = {
 			renderAll(this.elements, this.data);
 		}, this.root);
 	},
-
 	setData(key, value) {
 		this.data[key] = value;
 		renderAll(this.elements, this.data);
@@ -23,11 +21,7 @@ const Onioon = {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-	document.body.classList.add("onioon-loading");
-	setTimeout(() => {
-		Onioon.init();
-		document.body.classList.remove("onioon-loading");
-	});
+	Onioon.init();
 });
 
 window.Onioon = Onioon;
